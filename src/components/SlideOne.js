@@ -13,7 +13,12 @@ const SlideOne = () => {
       </div>
     </div>
     <div className="false-content-one">
-      {/* <div class="false-button-one">Book Now!</div> */}
+    <div className="false-header-one">
+        <div className="false-header-one-content">
+            The trip of <br/>a lifetime.
+        </div>
+    </div>
+      <div className="false-button-one"><div className='vh-center false-button-one-content'>BOOK A TRIP</div></div>
     </div>
   </div>
   );
