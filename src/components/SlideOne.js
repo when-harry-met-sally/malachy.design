@@ -19,6 +19,14 @@ const SlideOne = () => {
   return (
     <div className="slider-frame">
       <div className="inner-frame">
+        <div className='frame-background'
+          style={{
+            left: left + "px",
+            top: top + "px"
+          }}
+        >
+
+        </div>
         {/* <div className="row false-nav-one valign-wrapper">
       <div className="col s6 false-logo-one">Visit Mexico</div>
       <div className="col s2"></div>

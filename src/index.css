@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: 'roboto';
     color: white;
-    
 }
 
 .background-image-one {
@@ -23,10 +22,7 @@ body {
 }
 
 .slider-frame {
-    border-left: 1em solid white;
-    border-right: 1em solid white;
-    border-bottom: 1em solid white;
-    border-top: 3em solid white;
+    border: 1em solid white;
     width: 45em;
     height: 25em;
     display: block;
@@ -56,7 +52,6 @@ body {
 .false-content-one {
     background-color: white;
     height: 22em;
-    background: rgba(255,255,255, 0.15);
 }
 
 .false-icon-one {
@@ -64,9 +59,6 @@ body {
     margin-top: .3em;
 }
 
-.false-icons-one {
-    
-}
 
 .false-logo-one {
     font-size: 1.5em;
@@ -110,4 +102,15 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.inner-frame {
+    overflow: hidden;
+}
+
+.frame-background {
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
