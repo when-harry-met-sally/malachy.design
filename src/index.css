@@ -1,116 +1,115 @@
 body {
-    margin: 0;
-    font-family: 'roboto';
-    color: white;
+  margin: 0;
+  font-family: "roboto";
+  color: white;
 }
 
 .background-image-one {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./assets//mexico.jpg');
-    background-size: cover;
-    padding-top: 6em;
+  width: 100vw;
+  height: 100vh;
+  background: url("./assets//mexico.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 6em;
 }
 
 .background-image-one-content {
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .slider-frame {
-    border: 1em solid white;
-    width: 45em;
-    height: 25em;
-    display: block;
-}
-
-.navigation {
-    position: absolute;
-    width: 100vw;
-    height: 6em;
-}
-
-.malachy-logo {
-    font-size: 2em;
-    font-weight: bold;
-    margin-left: 2em;
-}
-
-.false-nav-one {
-    height: 2.6em;
-    color: rgb(90, 90, 90);
-    margin-top: -2.5em;
-    margin-left: 0;
-    margin-right: 0;
-   margin-bottom: 0;
-}
-
-.false-content-one {
-    background-color: white;
-    height: 22em;
-}
-
-.false-icon-one {
-    margin-left: .5em;
-    margin-top: .3em;
-}
-
-
-.false-logo-one {
-    font-size: 1.5em;
-    font-weight: thin;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.false-header-one {
-    top: 14em;
-    left: 3em;
-    position: absolute;
-}
-
-.false-header-one-content {
-    font-weight: bold;
-    font-size: 1.6em;
-}
-
-.false-button-one {
-    border: 1px solid white;
-    height: 3em;
-    width: 9em;
-    top: 19em;
-    left: 3em;
-    position: absolute;
-    padding: 0;
-    overflow: hidden;
-}
-
-.false-button-one-content {
-    font-weight: thin;
-    font-size: 1em;
-    white-space: nowrap;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.vh-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.inner-frame {
-    overflow: hidden;
+  border: solid white 1em;
+  width: 45em;
+  height: 25em;
+  display: block;
 }
 
 .frame-background {
-    background-color: black;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background: black;
+  /* background-image: url("./assets//mexico.jpg") no-repeat center center fixed; */
+}
+
+.inner-frame {
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.navigation {
+  position: absolute;
+  width: 100vw;
+  height: 6em;
+}
+
+.malachy-logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+.false-nav-one {
+  height: 2.6em;
+  color: rgb(90, 90, 90);
+  margin-top: -2.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+
+.false-icon-one {
+  margin-left: 0.5em;
+  margin-top: 0.3em;
+}
+
+.false-logo-one {
+  font-size: 1.5em;
+  font-weight: thin;
+  font-family: "Montserrat", sans-serif;
+}
+
+.false-header-one {
+  position: absolute;
+}
+
+.false-header-one-content {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.false-button-one {
+  border: 1px solid white;
+  height: 3em;
+  width: 9em;
+  position: absolute;
+  padding: 0;
+  overflow: hidden;
+}
+
+.false-button-one-content {
+  font-weight: thin;
+  font-size: 1em;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.vh-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.false-slide-one {
+  position: relative;
 }
