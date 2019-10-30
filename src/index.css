@@ -2,12 +2,13 @@ body {
   margin: 0;
   font-family: "roboto";
   color: white;
+  overflow: hidden;
 }
 
 .background-image-one {
   width: 100vw;
   height: 100vh;
-  background: url("./assets//mexico.jpg") no-repeat center center fixed;
+  background: url("./assets/street.jpg");
   background-size: cover;
   padding-top: 6em;
 }
@@ -22,25 +23,26 @@ body {
 }
 
 .slider-frame {
-  border: solid white 1em;
+  border: solid white .5em;
   width: 45em;
-  height: 25em;
+  height: 24em;
   display: block;
 }
 
 .frame-background {
+  background-image: url("./assets/street.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
   position: relative;
-  background: black;
-  /* background-image: url("./assets//mexico.jpg") no-repeat center center fixed; */
+
+  /* background: black; */
 }
 
 .inner-frame {
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .navigation {
@@ -55,43 +57,47 @@ body {
   margin-left: 2em;
 }
 
-.false-nav-one {
-  height: 2.6em;
-  color: rgb(90, 90, 90);
-  margin-top: -2.5em;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-
-.false-icon-one {
-  margin-left: 0.5em;
-  margin-top: 0.3em;
+.false-slide-one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .15);
 }
 
 .false-logo-one {
   font-size: 1.5em;
   font-weight: thin;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  left: 2em;
+}
+
+.false-icons-one {
+  position: relative;
+  left: 25em;
+}
+
+.false-icon-one {
+  margin-left: 0.5em;
 }
 
 .false-header-one {
-  position: absolute;
-}
-
-.false-header-one-content {
   font-weight: bold;
   font-size: 1.6em;
+  position: relative;
+  left: 2em;
+  top: 6em;
 }
 
 .false-button-one {
   border: 1px solid white;
   height: 3em;
   width: 9em;
-  position: absolute;
   padding: 0;
   overflow: hidden;
+  position: relative;
+  left: 3em;
+  top: 10em;
 }
 
 .false-button-one-content {
@@ -99,6 +105,7 @@ body {
   font-size: 1em;
   white-space: nowrap;
   font-family: "Montserrat", sans-serif;
+  padding: 1em;
 }
 
 .vh-center {
@@ -108,8 +115,92 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+} 
+
+.slide-move-down {
+  transform: translateY(-50em);
+  transition-duration: 2s;
 }
 
-.false-slide-one {
+.slide-move-up {
+  transform: translateY(0em);
+  transition-duration: 2s;
+}
+
+
+.fade-in::before {
+  opacity: 0;
+  visibility: visible;
+}
+.fade-in{
+  opacity: 1;
+  transition: opacity .7s linear;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.slide-two-header {
   position: relative;
+  font-weight: 900;
+  font-size: 3em;
+  color: black;
+  left: 5em;
+  top: -5em;
+}
+
+.slide-one-part-two {
+  position: relative;
+  top: 14em;
+  background-color: white;
+  width: 100%;
+  display: block; 
+}
+
+.slide-one-part-two-img {
+  position: relative;
+  top: 2em;
+  height: 20em;
+  background-image: url("./assets/mexico.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide-two-content {
+  position: relative;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.navbar {
+  height: 100%;
+}
+
+.nav-link {
+  font-size: 1.4em;
+  font-weight: 100;
+  margin-left: 2em;
+}
+
+.nav-links {
+  margin-right: 2em;
+}
+
+.contact-link {
+  background-color: white;
+  padding: .7em;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.slide-one-false-nav {
+  position: relative;
+  top: 1em;
 }
