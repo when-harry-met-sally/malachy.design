@@ -3,7 +3,8 @@ import React, { useState } from "react";
 const SlideOne = () => {
   return (
     <div className="slider-frame">
-    <div className="row false-nav-one valign-wrapper">
+        <div className='inner-frame'>
+    {/* <div className="row false-nav-one valign-wrapper">
       <div className="col s6 false-logo-one">Visit Mexico</div>
       <div className="col s2"></div>
       <div className="col s4 right-align">
@@ -19,7 +20,8 @@ const SlideOne = () => {
         </div>
     </div>
       <div className="false-button-one"><div className='vh-center false-button-one-content'>BOOK A TRIP</div></div>
-    </div>
+    </div> */}
+    <div className='inner-frame'
   </div>
   );
 };
